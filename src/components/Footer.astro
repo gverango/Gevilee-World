@@ -1,0 +1,42 @@
+---
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Verango. All rights reserved.
+	<div class="social-links">
+		<a href="https://www.linkedin.com/in/gevilee-mariane-verango-a5392a217/" target="_blank">
+			<span class="sr-only">Follow Gevilee on LinkedIn</span>
+			<img src= "linkedin.webp" width="42" height="42"/>
+		</a>
+		<a href="https://www.instagram.com/gevi.mari/" target="_blank">
+			<span class="sr-only">Follow Gevilee on Instagram</span>
+			<img src="instalogo.png" width="32" height="42"/>
+		</a>
+		<a href="https://github.com/gverango" target="_blank">
+			<span class="sr-only">Go to Astro's GitHub repo</span>
+			<img src="giticon.png" width="32" height="42"/>
+		</a>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>
